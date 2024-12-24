@@ -1,0 +1,1 @@
+import{r as e,e as a,j as n}from"./index-CAYfg5Gx.js";function t(){const[r,o]=e.useState(!1);return e.useEffect(()=>{r||(a("No account found kindly login or register",{variant:"warning"}),window.location.replace("login"))},[]),n.jsx("div",{children:"MyDashboard"})}export{t as default};
