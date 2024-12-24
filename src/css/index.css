@@ -1,0 +1,76 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  font-family: "Roboto", sans-serif;
+}
+
+:root {
+  --primaryColor: #af8f68;
+  --secondaryColor: #aba8a2;
+  --tertiaryColor: #4b300fff;
+  --bgColor: #4b300fff;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+.swipe {
+  animation: swipe;
+  animation-timeline: view();
+  animation-range: cover(30%);
+}
+
+.slide {
+  animation: slide;
+  animation-timeline: view();
+  animation-range: cover(10%);
+}
+
+@keyframes swipe {
+  from {
+    transform: translateX(20rem);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+@keyframes slide {
+  from {
+    transform: translateY(20rem);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
+.show {
+  backdrop-filter: 30px;
+  background: #120f0c8a;
+}
+
+.test {
+  background: #b2afaf;
+  transform: translateX(20rem);
+}
+
+input:not(:placeholder-shown) + input:invalid {
+  border: 2px solid red;
+}
+
+.cover {
+  background: rgba(9, 0, 0, 0.696);
+  width: 100vw;
+  height: 100vh;
+}
+
+.hide {
+  transform: translateX(-30rem);
+}
+.remove {
+  transform: translateX(30rem);
+}

@@ -1,0 +1,113 @@
+header {
+  /* animation: header 0.5s; */
+}
+
+.first {
+  animation: first 1s;
+}
+
+.second {
+  animation: second 1s;
+}
+.third {
+  animation: third 1s;
+}
+
+.forth {
+  animation: forth 1s;
+}
+
+@keyframes first {
+  from {
+    transform: translateX(-30rem);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
+@keyframes second {
+  from {
+    transform: translateY(30rem);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
+@keyframes third {
+  from {
+    transform: translateX(30rem);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+@keyframes forth {
+  from {
+    transform: translateY(-30rem);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
+
+@keyframes header {
+  from {
+    transform: translateY(-30rem);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
+
+.roll {
+  animation: moving;
+  animation-timeline: view();
+}
+
+@keyframes moving {
+  from {
+    transform: translateX(-10rem);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
+.menu {
+  animation: menu 1s ease;
+}
+.new {
+  animation: new 1s ease;
+}
+
+@keyframes menu {
+  from {
+    transform: translateX(-30rem);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
+@keyframes new {
+  from {
+    transform: translateX(30rem);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
+.rolling {
+  animation: rolling 50s infinite linear alternate;
+}
+
+@keyframes rolling {
+  from {
+    transform: rotate(360deg);
+  }
+  to {
+    transform: rotate(-360deg);
+  }
+}
