@@ -1,0 +1,1 @@
+import{j as a}from"./index-7e5pYmP3.js";function t(){return a.jsxs("div",{className:"p-12",children:[a.jsx("p",{className:"text-6xl",children:"Dear Customer!! payment are not available right naw"}),a.jsx("p",{children:"kindly try again later "})]})}export{t as default};
